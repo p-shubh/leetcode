@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	var a int = -232
+	var a int = 232
 
 	fmt.Println("Enter the number")
 
