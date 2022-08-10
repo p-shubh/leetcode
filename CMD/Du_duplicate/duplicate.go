@@ -1,16 +1,16 @@
-package main
+package Du_duplicate
 
 import "fmt"
 
-func main() {
+func Duplicate() {
 
 	var a []int = []int{1, 3, 4, 2, 2}
 
-	fmt.Println("findDuplicate(a)", findDuplicate(a))
+	fmt.Println("findDuplicate(a)", FindDuplicate(a))
 
 }
 
-func findDuplicate(nums []int) int {
+func FindDuplicate(nums []int) int {
 
 	var l int
 

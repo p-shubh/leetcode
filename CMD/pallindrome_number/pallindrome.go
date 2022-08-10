@@ -1,26 +1,26 @@
-package main
+package pallindrome
 
 import "fmt"
 
-func main() {
+func Palindrome() {
 
 	var a int = 232
 
-	fmt.Println("Enter the number")
+	// fmt.Println("Enter the number")
 
 	// fmt.Scan(&a)
 
-	result := isPalindrome(a)
+	result := IsPalindrome(a)
 
-	if result == true {
+	if result {
 		fmt.Println(a, "is a palindrome number")
-	} else if result == false {
+	} else if !result {
 		fmt.Println(a, " is not a palindrome number")
 
 	}
 }
 
-func isPalindrome(x int) bool {
+func IsPalindrome(x int) bool {
 
 	var temp int
 
