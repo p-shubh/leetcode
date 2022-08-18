@@ -1,8 +1,8 @@
-package Go_sum
+package main
 
 import "fmt"
 
-func Go_Sum() {
+func main() {
 
 	// var c []int
 

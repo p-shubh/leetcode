@@ -1,10 +1,10 @@
-package pallindrome
+package main
 
 import "fmt"
 
-func Palindrome() {
+func main() {
 
-	var a int = 232
+	var a int = 2312
 
 	// fmt.Println("Enter the number")
 

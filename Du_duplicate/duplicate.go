@@ -1,8 +1,8 @@
-package Du_duplicate
+package main
 
 import "fmt"
 
-func Duplicate() {
+func main() {
 
 	var a []int = []int{1, 3, 4, 2, 2}
 
