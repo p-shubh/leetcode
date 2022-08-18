@@ -4,36 +4,36 @@ import "fmt"
 
 func main() {
 
-	var i int
+	var z = []string{"shubham", "shubha", "Prajashubha"}
 
-	strs := []string{"shubham", "shubh", "shubhu"}
+	// fmt.Println(Prifix(z))
 
-	// if len(strs) == 0 {
-	// 	return ""
-	// }
+	// i := 0
+	var a, b []string
+	c := len(z[0])
 
-	if len(strs) == 1 {
-		// return strs[0]
-		fmt.Println(strs[0])
-	}
-	mx := 0
-	for {
-		for i = 1; i < len(strs); i++ {
-			if mx >= len(strs[i-1]) || mx >= len(strs[i]) || strs[i-1][mx] != strs[i][mx] {
-
-				// return string(strs[0][:mx])
-				fmt.Println(string(strs[0][0:mx]))
-			}
-		}
-		mx++
+	if len(z[0]) != len(z[1]) {
 		
+		fmt.Println("length of c", c)
+
+
 	}
 
-	fmt.Println(len(strs[i-1]))
-	fmt.Println(len(strs[1]))
-	fmt.Println(strs[i-1][mx])
-	fmt.Println(strs[1][mx])
+	fmt.Println(z[0])
+	fmt.Println(z[1])
 
-	// return string(strs[0][:mx])
-	// return string(strs[0][:mx])
+}
+
+func Prifix(a []string) string {
+
+	var z []string
+
+	for i := 0; i < len(z); i++ {
+		if z[0][i] != z[0][i+1] {
+			fmt.Println(z[0][i])
+			fmt.Println(z[0][i+1])
+		}
+	}
+
+	return "shubham"
 }
