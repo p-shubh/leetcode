@@ -9,7 +9,7 @@ func main() {
 	// fmt.Println(Prifix(z))
 
 	// i := 0
-	var a, b []string
+	// var a, b []string
 	c := len(z[0])
 
 	if len(z[0]) != len(z[1]) {
@@ -37,3 +37,28 @@ func Prifix(a []string) string {
 
 	return "shubham"
 }
+
+	// var result []int
+
+	// length := len(digits)
+
+	// var i int
+
+	// var j []int
+
+	// for i = 1; i <= length; i++ {
+
+	// 	j = append(j, i)
+
+	// 	if i == length {
+	// 		c := digits[length-1]
+	// 		digits[length-1] = c + 1
+
+	// 		fmt.Println(digits[length-1])
+
+	// 		// = digits[length] + 1
+	// 		// j = append(j, digits[length])
+	// 	}
+
+	// }
+
