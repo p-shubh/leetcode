@@ -7,9 +7,11 @@ import (
 
 func main() {
 
-	a := []int{1,2}
+	a := []int{1, 2}
 
-	fmt.Println(missingNumber(a))
+	// fmt.Println(missingNumber(a))
+
+	fmt.Println("missingNumbers", missingNumbers(a))
 
 }
 
@@ -51,4 +53,14 @@ func missingNumber(nums []int) int {
 
 	return result
 
+}
+
+func missingNumbers(nums []int) int {
+	var sum int
+	var ind int
+	for i, v := range nums {
+		sum += v
+		ind += i + 1
+	}
+	return ind - sum
 }
