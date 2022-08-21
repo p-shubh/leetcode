@@ -66,7 +66,7 @@ func plusOne(digits []int) []int {
 
 		j := digits[0]
 
-		digits[0] = j + 1
+		digits[0] = j+1
 
 		// if j == 0 || j == 1 {
 		// 	digits[0] = j + 1

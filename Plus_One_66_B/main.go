@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var digit []int = []int{9, 9, 9}
+	var digit []int = []int{}
 
 	c := plusOne(digit)
 
@@ -12,30 +12,17 @@ func main() {
 }
 
 func plusOne(digits []int) []int {
-
-	n := len(digits)
-
-	if n != 1 {
-
-		j := digits[n-1]
-
-		digits[n-1] = j + 1
-
-	} else if n == 1 {
-
-		j := digits[0]
-
-		digits[0] = 1
-
-		if digits[n-1]%10 == 0 {
-			digits = append(digits, j*0)
-			n--
-		} else if j == 0 || j == 1 {
-			digits[0] = j + 1
-			return digits
+	i := len(digits) - 1
+	carry := 1
+	for i >= 0 || carry > 0 {
+		if i < 0 {
+			digits = append([]int{carry}, digits...)
+			break
 		}
-
+		sum := digits[i] + carry
+		carry = sum / 10
+		digits[i] = sum % 10
+		i--
 	}
-
 	return digits
 }
