@@ -9,9 +9,11 @@ func main() {
 
 	a := []int{1, 2}
 
-	// fmt.Println(missingNumber(a))
+	b := a
 
-	fmt.Println("missingNumbers", missingNumbers(a))
+	fmt.Println(missingNumber(a))
+
+	fmt.Println("missingNumbers", missingNumbers(b))
 
 }
 
@@ -22,8 +24,6 @@ func missingNumber(nums []int) int {
 	sort.Ints(nums)
 
 	var result int
-
-	fmt.Println("shorted :", nums)
 
 	for c, d := range nums {
 
@@ -37,8 +37,6 @@ func missingNumber(nums []int) int {
 			}
 
 		} else if c <= len(nums) {
-
-			fmt.Println("c :", c, "d:", d)
 			if c != nums[c] {
 				nums[c] = c
 				result = nums[c]
