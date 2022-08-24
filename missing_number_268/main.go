@@ -7,11 +7,13 @@ import (
 
 func main() {
 
-	a := []int{1, 2}
+	// a := []int{1, 0, 3}
 
-	b := a
+	a := []int{1, 0, 3}
 
 	fmt.Println(missingNumber(a))
+
+	b := a
 
 	fmt.Println("missingNumbers", missingNumbers(b))
 
@@ -36,15 +38,14 @@ func missingNumber(nums []int) int {
 				return result
 			}
 
-		} else if c <= len(nums) {
-			if c != nums[c] {
-				nums[c] = c
-				result = nums[c]
-				break
+		} else if c <= len(nums) && c != nums[c] {
 
-			} else if nums[length-1] != length {
-				result = nums[c] + 1
-			}
+			nums[c] = c
+			result = nums[c]
+			break
+
+		} else if nums[length-1] != length {
+			result = nums[c] + 1
 		}
 
 	}

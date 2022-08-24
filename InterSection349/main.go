@@ -146,11 +146,11 @@ func intersection(nums1 []int, nums2 []int) []int {
 
 	if len(nums1) < len(nums2) {
 
-		// fmt.Println("Before swapping :", "nums1 =", nums1, "nums2 =", nums2)
+		fmt.Println("Before swapping :", "nums1 =", nums1, "nums2 =", nums2)
 		a := nums1
 		nums1 = nums2
 		nums2 = a
-		// fmt.Println("After swapping :", "nums1 =", nums1, "nums2 =", nums2)
+		fmt.Println("After swapping :", "nums1 =", nums1, "nums2 =", nums2)
 
 	}
 
@@ -158,25 +158,25 @@ func intersection(nums1 []int, nums2 []int) []int {
 	for i := 0; i < len(nums2); i++ {
 		for j := 0; j < len(nums1); j++ {
 
-			// // fmt.Println("j :", j)
-			// fmt.Println("i :", i, "nums1 :", nums1[j])
-			// fmt.Println("j :", j, "nums2 :", nums2[i])
+			fmt.Println("j :", j)
+			fmt.Println("i :", i, "nums1 :", nums1[j])
+			fmt.Println("j :", j, "nums2 :", nums2[i])
 
 			if len(addSlice) == 0 && nums1[j] == nums2[i] {
 				addSlice = append(addSlice, nums1[j])
-				// fmt.Println("addSlice :", addSlice)
+				fmt.Println("addSlice :", addSlice)
 
 			} else {
 
 				for k := 0; k < len(addSlice); k++ {
 
-					// fmt.Println("k :", k, "addSlice[k] :", addSlice[k])
-					// fmt.Println("nums1 :", nums1[j])
+					fmt.Println("k :", k, "addSlice[k] :", addSlice[k])
+					fmt.Println("nums1 :", nums1[j])
 
 					if nums1[j] == nums2[i] && addSlice[k] != nums1[j] {
 
 						addSlice = append(addSlice, nums1[j])
-						// fmt.Println("addSlice :", addSlice)
+						fmt.Println("addSlice :", addSlice)
 
 					}
 
