@@ -7,11 +7,11 @@ func main() {
 	fmt.Println(totalMoney(4))
 }
 
-func totalMoneys(n int) int {
-	mod := n / 7
-	div := n % 7
-	return 21*mod + 7*mod*(mod+1)/2 + (2*mod+div+1)*div/2
-}
+// func totalMoneys(n int) int {
+// 	mod := n / 7
+// 	div := n % 7
+// 	return 21*mod + 7*mod*(mod+1)/2 + (2*mod+div+1)*div/2
+// }
 
 func totalMoney(n int) int {
 
