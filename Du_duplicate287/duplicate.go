@@ -18,6 +18,31 @@ func main() {
 }
 
 func findDuplicate(nums []int) int {
+    slow, fast := 0,0
+    
+    for {
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+        
+        if slow == fast {
+            break
+        }
+    }
+    
+    slow2 := 0
+    
+    for {
+        slow = nums[slow]
+        slow2 = nums[slow2]
+        
+        if slow == slow2{
+            break
+        }
+    }
+    return slow2
+}
+
+func findDuplicates(nums []int) int {
 
 	result := 0
 
